@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="top"
+    android:orientation="vertical"
+    tools:context=".RegistroActivity" >
+
+   <EditText
+        android:id="@+id/registerName"
+         android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:hint="@string/profilename" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/registerPass"
+         android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:hint="@string/password"
+        android:inputType="textPassword" >
+           <requestFocus />
+         </EditText>   
+    
+    <EditText
+        android:id="@+id/registerCorreo"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:hint="@string/profileCorreo"
+        android:inputType="textEmailAddress" >
+           <requestFocus />
+            </EditText>
+           
+     <EditText
+        android:id="@+id/registerTelefono"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:hint="@string/profileTelefono">
+           <requestFocus />
+            </EditText>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/notificaciones" />
+
+        <RadioButton
+            android:id="@+id/radioRegister1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_marginTop="20dp"
+            android:text="@string/yes" />
+
+        <RadioButton
+            android:id="@+id/radioRegister2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_marginTop="20dp"
+            android:text="@string/no" />
+   
+ </LinearLayout>
+
+
+
+
+    <Button
+        android:id="@+id/agregarRegistro"
+        style="@style/AppTheme"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="agregar"
+        android:text="@string/agregar" />
+
+</LinearLayout>
